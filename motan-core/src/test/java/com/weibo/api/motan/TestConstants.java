@@ -19,5 +19,5 @@ package com.weibo.api.motan;
 import com.weibo.api.motan.rpc.URL;
 
 public class TestConstants {
-    public static final URL EMPTY_URL = new URL("", "127.0.0.1", 0, "");
+	public static final URL EMPTY_URL = new URL("", "127.0.0.1", 0, "");
 }
