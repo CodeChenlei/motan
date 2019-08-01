@@ -17,10 +17,7 @@
 package com.weibo.api.motan;
 
 import com.weibo.api.motan.common.MotanConstants;
-import com.weibo.api.motan.config.ProtocolConfig;
-import com.weibo.api.motan.config.RefererConfig;
-import com.weibo.api.motan.config.RegistryConfig;
-import com.weibo.api.motan.config.ServiceConfig;
+import com.weibo.api.motan.config.*;
 import com.weibo.api.motan.protocol.example.IWorld;
 import com.weibo.api.motan.protocol.example.MockWorld;
 import com.weibo.api.motan.rpc.URL;
@@ -202,7 +199,6 @@ public class BaseTestCase extends TestCase {
 class MockServiceConfig<T> extends ServiceConfig<T> {
 	private static final long serialVersionUID = 7965700855475224943L;
 
-	protected boolean serviceExists(URL url) {
-		return false;
+	protected boolean serviceExists(URL url) {		return false;
 	}
 }
